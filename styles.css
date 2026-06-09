@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url(/Fighter\ Attack.ttf);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.navegacion{
+    display: flex;
+    gap: 1vw;
+    margin: 0;
+    height: 7vh;
+    list-style-type: none;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2.5vw;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(
+        to bottom, 
+        black 1%,
+        #191a1a 35%,
+        transparent 100%
+    );
+}
+
+.linknav{
+    margin: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    display: inline-block;
+    color: white;
+}
+
+.linknav:hover{
+    transform: scale(1.3);
+}
+
+.linknav:visited{
+    color: white;
+}
+
+header{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/imagenes/dj.webp');
+    background-size: cover;
+}
+
+header h1{
+    font-size: 4rem;
+    margin-bottom: 0px;
+    font-family: 'MiFuente';
+    transform: rotate(-10deg);
+}
+
+header p{
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.oculto {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1.5s cubic-bezier(0.1, 0.8, 0.2, 1), 
+                opacity 1.5s ease;
+}
+
+#reserva{
+    display: inline-block;
+    color: black;
+    background-color: #5fb60a;
+    padding: 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, white 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.4s ease, color 0.4s ease;
+    transition: transform 1.5s cubic-bezier(0.1, 0.8, 0.2, 1), 
+                opacity 1.5s ease,
+                background-position 0.4s ease, color 0.4s ease;
+}
+
+#reserva:hover {
+    background-position: bottom;
+    color: #5fb60a;
+}
+
+#imgheader{
+    width: 50vw;
+    height: auto;
+}
+
+#proyectos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "BBH Bogle", sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin: 0 10px 50px 10px;
+}
+
+#perfil {
+    display: flex;
+    gap: 2vw;
+    background-color: black;
+    overflow: hidden; 
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    place-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 2vw;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: transform 1.4s cubic-bezier(0.1, 0.8, 0.2, 1), 
+                opacity 1.4s ease;
+}
+
+#texto h2 {
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 8vw;
+    margin: 0;
+}
+
+#texto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+#perfil img {
+    width: 50%;
+    margin-right: 2vw;
+    border-radius: 50px;
+    padding-bottom: 20px;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: transform 1.4s cubic-bezier(0.1, 0.8, 0.2, 1), 
+                opacity 1.4s ease;
+}
+
+#perfil.perfil-activo #texto,
+#perfil.perfil-activo img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#eventos {
+    padding: 60px 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+#eventos h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 3rem;
+}
+
+.carrusel-js {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cinta-js {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    will-change: transform;
+}
+
+.cinta-js img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#contacto{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2rem;
+}
+
+#contacto{
+    text-align: center;
+}
+
+#contactoW a{
+    color: black;
+    background-color: #5fb60a;
+    padding: 20px;
+    margin: 5px 5px 20px 5px;
+    border-radius: 100px;
+    text-decoration: none;
+    background-image: linear-gradient(to top, white 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.4s ease, color 0.4s ease;
+}
+
+#contactoW a:hover {
+    background-position: bottom;
+    color: #5fb60a;
+}
+
+.form {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #18181b;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input[type="text"],
+.form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #09090b;
+    color: #ffffff;
+    border: 2px solid #27272a;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    resize: vertical; 
+}
+
+.form input[type="text"]:focus,
+.form textarea:focus {
+    border-color: rgb(95, 182, 10);
+    box-shadow: 0 0 8px rgba(204, 255, 0, 0.2);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #71717a;
+}
+
+
+.form button[type="submit"] {
+    background-color: #5fb60a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #5fb60a;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(204, 255, 0, 0.4);
+}
+
+.form button[type="submit"]:active {
+    transform: scale(0.98);
+}

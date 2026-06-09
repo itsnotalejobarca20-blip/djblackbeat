@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>DJ Black Beat</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navegacion">
+                <li><a class="linknav" href="#">Inicio</a></li>
+                <li><a class="linknav" href="#proyectos">Proyectos</a></li>
+                <li><a class="linknav" href="#perfil">Perfil</a></li>
+                <li><a class="linknav" href="#eventos">Eventos</a></li>
+                <li><a class="linknav" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 id="titulo-maquina"></h1>
+        <p id="parrafo-perfil" class="oculto">
+            Hola! Soy Dj Black Beat, de origen ileño con especialidad en matrimonios, quinceañeros y fiestas privadas.
+        </p>
+        <a id="reserva" href="#contacto" class="oculto">Realiza tu reserva</a>
+    </header>
+    <main>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="videos">
+                <iframe src="https://www.youtube.com/embed/JL0cr-os9JY" title="LATIN MIX MAYO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Q5DUVJtreHs" title="MIX LA PLENA 🔥 Vitamina, Velda, Ponte Lokita, KETU TeCRE, Y Que Fue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/fGAkUa86I4A" title="MIX TOP OCTUBRE 2024 🎃 Soltera, Doblexxo, Peligrosa, Despues de la 1, Si antes te hubiera conocido" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="perfil">
+    <div id="texto" class="animar-izquierda">
+        <h2>Conoceme</h2>
+        <p>Con una pasión innata por el ritmo y una conexión única con la pista, he dedicado mi trayectoria a transformar noches ordinarias en experiencias sonoras inolvidables. Mi estilo se define por mezclas dinámicas, transiciones milimétricas y una selección musical que viaja desde los ritmos más profundos del House hasta la energía vibrante del Techno. Para mí, estar frente a las bandejas no es solo mezclar canciones; es leer la atmósfera del club, sincronizar los latidos del público y guiar la pista en un viaje donde la música es el único idioma que importa.</p>
+    </div>
+    
+    <img src="/imagenes/ruyer.jpg" alt="DJ Ruyer" class="animar-derecha">
+</section>
+        <section id="eventos">
+            <h2>Eventos</h2>  
+            <div class="carrusel-js" id="carrusel">
+                <div class="cinta-js" id="cinta">
+                    <img src="/imagenes/evento1.jpg" alt="Foto 1">
+                    <img src="/imagenes/evento2.jpg" alt="Foto 2">
+                    <img src="/imagenes/evento3.png" alt="Foto 3">
+                    <img src="/imagenes/evento4.webp" alt="Foto 4">
+                    <img src="/imagenes/evento5.avif" alt="Foto 5">
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div id="contactoW">
+                <h3>Contacto por Whatsapp</h3>
+                <a href="https://wa.me/931492700">Contactame</a>
+            </div>
+            <div id="contactoF">
+                <h3>Contacto por Correo</h3>
+                <form class="form">
+                    <input type="text" placeholder="Ingresa tu nombre">
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+                    <button type="submit">Enviar Formulario</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
